@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neha's Retreat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Neha's Retreat</h1>
+    <p> Villas & Farmhouses for an Unforgettable Getaway</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#villas">Our Villas</a></li>
+      <li><a href="#gallery">About Us</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Villas Section -->
+  <section id="villas" class="section">
+    <h2>Our Beautiful Retreats</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="./img/bitch.jpg" alt="Seaside Villa">
+        <h3>Seaside Villa</h3>
+        <p>Wake up to ocean views in our tranquil, fully-equipped seaside villa.</p>
+      </div>
+      <div class="card">
+        <img src="./img/view2.jpg" alt="Countryside Farmhouse">
+        <h3>Countryside Farmhouse</h3>
+        <p>Relax in nature’s lap surrounded by greenery and comfort.</p>
+      </div>
+      <div class="card">
+        <img src="./img/view.jpg" alt="Mountain View Lodge">
+        <h3>Mountain View Lodge</h3>
+        <p>Breathtaking views and peaceful vibes await in our mountain retreat.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- About Us Section -->
+<section id="about" class="section about-section">
+  <h2>About Neha’s Retreat</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>Neha’s Retreat is more than just a villa or farmhouse — it’s an experience wrapped in nature, peace, and personalized hospitality.</p>
+      <p>Located in the serene hills of Tranquil Town, our retreat offers the perfect blend of luxury and rustic charm. Whether it’s a romantic getaway, a weekend with friends, or a family reunion, we provide the ideal setting for your perfect escape.</p>
+      <p>With scenic views, modern amenities, and heartwarming service, we ensure that every guest leaves with memories worth cherishing.</p>
+    </div>
+    <div class="about-image">
+      <img src="./img/name_name.jpg" alt="About Neha’s Retreat">
+    </div>
+  </div>
+</section>
+
+    <!-- Gallery / Photo Tour Section -->
+<!-- Gallery / Photo Tour Section -->
+<section id="gallery" class="section">
+  <h2>Gallery / Photo Tour</h2>
+  <div class="styled-gallery">
+    <div class="gallery-item"><img src="./img/room.jpg" alt="Interior" data-large="./img/room.jpg/800x600?text=Luxury+Villa+Interior"></div>
+    <div class="gallery-item offset"><img src="./img/sunbasla.jpg" alt="Sunset View" data-large="./img/sunbasla.jpg/800x600?text=Sunset+View"></div>
+    <div class="gallery-item"><img src="./img/pool.jpg" alt="Pool" data-large="./img/pool.jpg/800x600?text=Swimming+Pool"></div>
+    <div class="gallery-item offset"><img src="./img/najara.jpg" alt="Lounge" data-large="./img/najara.jpg/800x600?text=Garden+Lounge"></div>
+    <div class="gallery-item"><img src="./img/Name.jpg" alt="Bonfire" data-large="./img/name_name.jpg/800x600?text=Bonfire+Night"></div>
+    <div class="gallery-item offset"><img src="./img/view2.jpg" alt="Balcony View" data-large="./img/view2.jpg/800x600?text=Balcony+View"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Enlarged View">
+  </div>
+</section>
+
+
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img class="lightbox-img" id="lightbox-img">
+    </div>
+  </section>
+
+ 
+
+  <!-- Contact Section -->
+  <section id="contact" class="section light">
+    <h2>Get in Touch</h2>
+    <p>Email: bookings@nehasretreat.com</p>
+    <p>Phone: +123-456-7890</p>
+    <p>Location: Hilltop Valley, Tranquil Town</p>
+    <!-- Embedded Google Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.435958458583!2d72.8696938686457!3d18.766130113664786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d7020053d731%3A0x624b06a9c743cece!2sNeha&#39;s%20Retreat!5e0!3m2!1sen!2sin!4v1744198372282!5m2!1sen!2sin"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Neha's Retreat. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Lightbox & Carousel -->
+  
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    }
+  
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+   
+  
+</body>
+</html>
